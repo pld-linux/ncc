@@ -33,7 +33,7 @@ mpg123, ncftp i wielu innych znanych projektów.
 
 %build
 %{__make} objdir/ncc \
-	CC=%{__cxx} \
+	CC="%{__cxx}" \
 	LCFLAGS="%{rpmcflags} -fpermissive"
 
 %{__make} -C nccnav \

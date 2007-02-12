@@ -1,5 +1,5 @@
 Summary:	C source code analyzer
-Summary(pl):	Analizator kodu ¼ród³owego w C
+Summary(pl.UTF-8):   Analizator kodu ÅºrÃ³dÅ‚owego w C
 Name:		ncc
 Version:	2.3
 Release:	0.1
@@ -20,13 +20,13 @@ most common gcc extensions. ncc has been tested with the sources of
 the Linux kernel, gtk+, gcc, gdb, bind, mpg123, ncftp, and many other
 famous projects.
 
-%description -l pl
-ncc to analizator kodu ¼ród³owego w C generuj±cy informacje o
-przep³ywie sterowania i u¿yciu zmiennych. Wykorzystanie go powinno byæ
-tak ³atwe, jak zmiana CC=gcc na CC=ncc w plikach makefile, do³o¿ono
-te¿ starañ, aby obs³u¿yæ wiêkszo¶æ popularnych rozszerzeñ gcc. ncc by³
-testowany ze ¼ród³ami j±dra Linuksa, pakietów gtk+, gcc, gdb, bind,
-mpg123, ncftp i wielu innych znanych projektów.
+%description -l pl.UTF-8
+ncc to analizator kodu ÅºrÃ³dÅ‚owego w C generujÄ…cy informacje o
+przepÅ‚ywie sterowania i uÅ¼yciu zmiennych. Wykorzystanie go powinno byÄ‡
+tak Å‚atwe, jak zmiana CC=gcc na CC=ncc w plikach makefile, doÅ‚oÅ¼ono
+teÅ¼ staraÅ„, aby obsÅ‚uÅ¼yÄ‡ wiÄ™kszoÅ›Ä‡ popularnych rozszerzeÅ„ gcc. ncc byÅ‚
+testowany ze ÅºrÃ³dÅ‚ami jÄ…dra Linuksa, pakietÃ³w gtk+, gcc, gdb, bind,
+mpg123, ncftp i wielu innych znanych projektÃ³w.
 
 %prep
 %setup -q

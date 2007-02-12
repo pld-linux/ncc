@@ -1,5 +1,5 @@
 Summary:	C source code analyzer
-Summary(pl.UTF-8):   Analizator kodu źródłowego w C
+Summary(pl.UTF-8):	Analizator kodu źródłowego w C
 Name:		ncc
 Version:	2.3
 Release:	0.1

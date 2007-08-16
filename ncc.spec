@@ -1,12 +1,12 @@
 Summary:	C source code analyzer
 Summary(pl.UTF-8):	Analizator kodu źródłowego w C
 Name:		ncc
-Version:	2.3
+Version:	2.6
 Release:	1
 License:	Artistic
 Group:		Development/Languages
 Source0:	http://students.ceid.upatras.gr/~sxanth/ncc/%{name}-%{version}.tar.gz
-# Source0-md5:	295d59078009f31f454b4cc4f4838624
+# Source0-md5:	0d506b66c68708252733cf99605d8016
 URL:		http://students.ceid.upatras.gr/~sxanth/ncc/index.html
 BuildRequires:	libstdc++-devel
 BuildRequires:	ncurses-devel
@@ -41,12 +41,14 @@ mpg123, ncftp i wielu innych znanych projektów.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_includedir},%{_mandir}/man1}
 install objdir/ncc $RPM_BUILD_ROOT%{_bindir}
+install doc/nognu $RPM_BUILD_ROOT%{_includedir}
 for nccs in ar c++ g++ ld; do
 	ln -sf /usr/bin/ncc $RPM_BUILD_ROOT%{_bindir}/ncc$nccs
 done
 install nccnav/nccnav $RPM_BUILD_ROOT%{_bindir}
+install scripts/gengraph.py $RPM_BUILD_ROOT%{_bindir}
 ln -sf %{_bindir}/nccnav $RPM_BUILD_ROOT%{_bindir}/nccnavi
 install ncc.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
@@ -57,4 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc doc/*
 %attr(755,root,root) %{_bindir}/ncc*
+%attr(755,root,root) %{_bindir}/gengraph.py
+%{_includedir}/nognu
 %{_mandir}/man1/ncc.1*

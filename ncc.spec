@@ -1,12 +1,12 @@
 Summary:	C source code analyzer
 Summary(pl.UTF-8):	Analizator kodu źródłowego w C
 Name:		ncc
-Version:	2.7
+Version:	2.8
 Release:	1
 License:	Artistic
 Group:		Development/Languages
 Source0:	http://students.ceid.upatras.gr/~sxanth/ncc/%{name}-%{version}.tar.gz
-# Source0-md5:	6945c8ee4d1496dae17e5c91f00117d5
+# Source0-md5:	0a6500c8c05a5344902246a95094e654
 URL:		http://students.ceid.upatras.gr/~sxanth/ncc/index.html
 BuildRequires:	libstdc++-devel
 BuildRequires:	ncurses-devel
